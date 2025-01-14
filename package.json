@@ -1,6 +1,7 @@
 {
   "name": "solana-vs-code-extension-pack",
-  "displayName": "Solana Developer Extension Pack",
+  "publisher": "solana-developers",
+  "displayName": "Solana Developers Pack",
   "description": "A bundle of VS Code extensions for Solana development.",
   "version": "0.0.1",
   "license": "MIT",
