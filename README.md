@@ -11,13 +11,13 @@
 </h6>
 <div align="center">
 
----
-
 ![GitHub](https://img.shields.io/github/license/solana-developers/vs-code-extension-pack?style=flat-square&color=A3BE8C)
 ![Installs](https://vsmarketplacebadges.dev/installs-short/solana-developers.vs-code-extension-pack.svg?&logo=visualstudiocode&color=A3BE8C)
 ![Version](https://vsmarketplacebadges.dev/version-short/solana-developers.vs-code-extension-pack.svg?&logo=visualstudiocode&color=A3BE8C&label=version)
 
 </div>
+
+---
 
 ## Contribute
 
