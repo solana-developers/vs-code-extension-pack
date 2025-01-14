@@ -1,0 +1,61 @@
+{
+  "name": "solana-vs-code-extension-pack",
+  "displayName": "Solana Developer Extension Pack",
+  "description": "A bundle of VS Code extensions for Solana development.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solana-developers/vs-code-extension-pack.git"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "scripts": {
+    "vsc:package": "npx @vscode/vsce package",
+    "vsc:publish": "npx @vscode/vsce publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.9"
+  },
+  "packageManager": "pnpm@9.1.0",
+  "icon": "solana_devs.jpeg",
+  "categories": [
+    "Extension Packs"
+  ],
+  "author": "nickfrosty",
+  "contributors": [
+    {
+      "name": "Nick Frostbutter",
+      "url": "https://github.com/nickfrosty"
+    }
+  ],
+  "homepage": "https://github.com/solana-developers/vs-code-extension-pack/blob/master/README.md",
+  "extensionPack": [
+    "rust-lang.rust-analyzer",
+    "tamasfe.even-better-toml",
+    "fill-labs.dependi",
+    "usernamehw.errorlens",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "mikestead.dotenv",
+    "steoates.autoimport",
+    "ms-vscode.vscode-typescript-next",
+    "unifiedjs.vscode-mdx",
+    "esbenp.prettier-vscode",
+    "redhat.vscode-yaml"
+  ],
+  "keywords": [
+    "solana",
+    "web3",
+    "web3js",
+    "blockchain",
+    "crypto",
+    "dapps",
+    "wallet",
+    "rust",
+    "anchor",
+    "anchor-lang"
+  ]
+}
