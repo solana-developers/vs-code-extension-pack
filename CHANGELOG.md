@@ -1,10 +1,13 @@
-# Change Log
+# Changelog
 
-All notable changes to the Solana VS Code extension pack will be documented in this file.
+## 0.0.2
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this
-file.
+### Patch Changes
 
-## [Unreleased]
+- downgrade minimum vs code version. added 'search crates'
 
-- Initial release
+## 0.0.1
+
+### Initial version
+
+- initial version of the extension pack
