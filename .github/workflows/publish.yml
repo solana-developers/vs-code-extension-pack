@@ -13,7 +13,7 @@ env:
   DO_NOT_TRACK: "1"
 
 jobs:
-  build-and-publish-to-npm:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,13 +25,7 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Configure VS Code Marketplace token
-        run: |
-          pnpm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-        env:
-          VS_CODE_TOKEN: ${{ secrets.VS_CODE_TOKEN }}
-
-      - name: Create Changesets Pull Request or Trigger an NPM Publish
+      - name: Create Changesets Pull Request or Trigger Publish
         id: changesets
         uses: changesets/action@v1
         env:
