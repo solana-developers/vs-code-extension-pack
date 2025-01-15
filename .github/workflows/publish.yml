@@ -1,0 +1,41 @@
+name: Version & Publish
+
+on:
+  workflow_dispatch:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+env:
+  # See https://consoledonottrack.com/
+  DO_NOT_TRACK: "1"
+
+jobs:
+  build-and-publish-to-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        uses: ./.github/workflows/actions/install-dependencies
+
+      - name: Build
+        run: pnpm build
+
+      - name: Configure VS Code Marketplace token
+        run: |
+          pnpm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+        env:
+          VS_CODE_TOKEN: ${{ secrets.VS_CODE_TOKEN }}
+
+      - name: Create Changesets Pull Request or Trigger an NPM Publish
+        id: changesets
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VS_CODE_TOKEN: ${{ secrets.VS_CODE_TOKEN }}
+        # with:
+        # publish: pnpm vsc:publish
