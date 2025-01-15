@@ -2,13 +2,11 @@
     Solana Developer Extension Pack
 </h1>
 
-<h6 align="center">
-    <a href="#about">about</a>
+<h3 align="center">
+    <a href="#about">About</a>
     ·
-    <a href="#install">install</a>
-    ·
-    <a href="#dev">contribute</a>
-</h6>
+    <a href="#dev">Contribute</a>
+</h3>
 <div align="center">
 
 ![GitHub](https://img.shields.io/github/license/solana-developers/vs-code-extension-pack?style=flat-square&color=A3BE8C)
@@ -18,6 +16,11 @@
 </div>
 
 ---
+
+## About
+
+The Solana Developer Extension Pack is a collection of the most useful VS code extensions to help
+give the best development experience when building Solana applications.
 
 ## Contribute
 
